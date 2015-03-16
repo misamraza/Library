@@ -7,6 +7,8 @@ String isbn
 Date dateBorrowed
 Date returnDate
 Student student 
+String toString(){title}
+
 
 
     static constraints = {
