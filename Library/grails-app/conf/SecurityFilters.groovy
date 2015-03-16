@@ -6,7 +6,7 @@ class SecurityFilters {
  return true
  def allowedActions = ['show', 'index', 'login', 'validate']
  if (!session.user && !allowedActions.contains(actionName)){
- redirect(controller:'leader', action:'login', params:['cName': controllerName, 
+ redirect(controller:'librarian', action:'login', params:['cName': controllerName, 
 'aName':actionName])
  return false
  }

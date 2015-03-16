@@ -21,8 +21,7 @@
  </td>
  </tr>
  <tr class="prop">
- <td class="name">Web Architectures
-5
+ <td class="name">
  <label for="password">Password:</label>
  </td>
  <td class="value">
