@@ -94,10 +94,11 @@ class LibrarianController {
 def login() {
  if (params.cName)
  return [cName:params.cName, aName:params.aName]
-	def logout = {
+ }
+
+def logout = {
  session.user = null
  redirect(uri:'/')
- }
  }
 
 def validate() {
