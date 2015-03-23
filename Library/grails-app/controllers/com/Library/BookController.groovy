@@ -4,6 +4,7 @@ package com.Library
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import grails.converters.*
 
 @Transactional(readOnly = true)
 class BookController {
@@ -16,8 +17,12 @@ class BookController {
     }
 
     def show(Book bookInstance) {
-        respond bookInstance
-    }
+       if(params.id && Book.exists(params.id)){
+ render Book.findById(params.id) as XML
+ }else{
+ render Book.list() as XML
+ }
+}
 
     def create() {
         respond new Book(params)

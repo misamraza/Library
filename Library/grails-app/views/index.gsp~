@@ -17,10 +17,10 @@ This system will allow you to add a Library, Librarian, Student, Course and Book
  <div class="homeCell">
  <h3>Add a Library</h3>
  <p> 
-To add a course press the button below. 
+To add a library press the button below. 
 </p>
  <span class="buttons" >
- <g:link controller="library" action="index">Add Library</g:link>
+ <g:link controller="Library" action="index">Add Library</g:link>
  </span>
  </div>
 
@@ -63,6 +63,8 @@ To add a book press the button below.
  <g:link controller="book" action="index"> Add Book</g:link>
  </span>
  </div>
+
+
 
  </body>
 </html>

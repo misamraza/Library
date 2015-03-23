@@ -40,7 +40,7 @@ To add a librarian press the button below.
 To add a student press the button below. 
 </p>
  <span class="buttons" >
- <g:link controller="student" action="index"> Add Student</g:link>
+ <g:link controller="student" action="create"> Add Student</g:link>
  </span>
  </div>
 
@@ -60,7 +60,27 @@ To add a course press the button below.
 To add a book press the button below. 
 </p>
  <span class="buttons" >
- <g:link controller="book" action="index"> Add Book</g:link>
+ <g:link controller="book" action="create"> Add Book</g:link>
+ </span>
+ </div>
+
+<div class="homeCell">
+ <h3>List Student Details</h3>
+ <p>
+To list details of student, press button below.
+</p>
+ <span class="buttons" >
+ <g:link controller="student" action="show"> Student Details</g:link>
+ </span>
+ </div>
+
+<div class="homeCell">
+ <h3>List Books</h3>
+ <p>
+To list details of books, press button below.
+</p>
+ <span class="buttons" >
+ <g:link controller="book" action="show"> Student Books</g:link>
  </span>
  </div>
 
