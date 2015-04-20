@@ -4,6 +4,7 @@ package com.Library
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import grails.converters.*
 
 @Transactional(readOnly = true)
 class LibrarianController {
@@ -16,7 +17,7 @@ class LibrarianController {
     }
 
     def show(Librarian librarianInstance) {
-        respond librarianInstance
+     respond librarianInstance
     }
 
     def create() {

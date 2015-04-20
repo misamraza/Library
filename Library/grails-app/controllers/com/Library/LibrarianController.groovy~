@@ -4,6 +4,7 @@ package com.Library
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import grails.converters.*
 
 @Transactional(readOnly = true)
 class LibrarianController {
@@ -16,7 +17,17 @@ class LibrarianController {
     }
 
     def show(Librarian librarianInstance) {
-        respond librarianInstance
+     if(params.id && Librarian.exists(params.id)){
+ render Librarian.findById(params.id)
+ }else{
+ render Librarian.list() 
+ }   
+
+
+
+
+
+//respond librarianInstance
     }
 
     def create() {
@@ -94,10 +105,11 @@ class LibrarianController {
 def login() {
  if (params.cName)
  return [cName:params.cName, aName:params.aName]
-	def logout = {
+ }
+
+def logout = {
  session.user = null
  redirect(uri:'/')
- }
  }
 
 def validate() {

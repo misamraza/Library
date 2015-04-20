@@ -30,7 +30,7 @@ To add a library press the button below.
 To add a librarian press the button below. 
 </p>
  <span class="buttons" >
- <g:link controller="librarian" action="index"> Add Librarian</g:link>
+ <g:link controller="librarian" action="login"> Add Librarian</g:link>
  </span>
  </div>
 
