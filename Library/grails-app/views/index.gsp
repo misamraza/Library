@@ -20,7 +20,7 @@ This system will allow you to add a Library, Librarian, Student, Course and Book
 To add a library press the button below. 
 </p>
  <span class="buttons" >
- <g:link controller="Library" action="index">Add Library</g:link>
+ <g:link controller="Library" action="create">Add Library</g:link>
  </span>
  </div>
 
@@ -30,7 +30,7 @@ To add a library press the button below.
 To add a librarian press the button below. 
 </p>
  <span class="buttons" >
- <g:link controller="librarian" action="login"> Add Librarian</g:link>
+ <g:link controller="librarian" action="create"> Add Librarian</g:link>
  </span>
  </div>
 
@@ -50,7 +50,7 @@ To add a student press the button below.
 To add a course press the button below. 
 </p>
  <span class="buttons" >
- <g:link controller="course" action="index">Add Course</g:link>
+ <g:link controller="course" action="create">Add Course</g:link>
  </span>
  </div>
 
